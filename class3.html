@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grade Tracker - Class 3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tracker-box">
+    <h2>Class 3 - Grade Tracker</h2>
+    <input type="text" id="subjectInput" placeholder="Subject">
+    <input type="text" id="gradeInput" placeholder="Grade">
+    <input type="text" id="commentInput" placeholder="Comments">
+    <br>
+    <button onclick="addGrade()">Add Grade</button>
+    <button onclick="goBack()">Back to Main</button>
+  </div>
+
+  <table id="gradeTable">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+        <th>Comments</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+  <script>
+    const classKey = 'class1';
+    loadClassData(classKey);
+  </script>
+</body>
+</html>
